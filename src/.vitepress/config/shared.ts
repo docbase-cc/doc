@@ -18,12 +18,13 @@ import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 
 export const shared = defineConfig({
   title: "DocBase",
+  description: "为AI构建的私有实时知识库",
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
   vite: {
     ssr: {
-      noExternal: ["@nolebase/*"],
+      noExternal: ["@nolebase/*", "dayjs"],
     },
     plugins: [
       GitChangelog({

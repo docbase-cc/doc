@@ -2,11 +2,11 @@
 layout: home
 
 title: DocBase
-titleTemplate: 基于文件实时同步的本地知识库
+titleTemplate: 为AI构建的私有实时知识库
 
 hero:
   name: 🗃️ DocBase
-  text: 基于文件实时同步的本地知识库
+  text: 为AI构建的私有实时知识库
   tagline: 轻松构建 · 自动管理 · 极速搜索
   actions:
     - theme: brand

@@ -2,7 +2,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export const zh = defineConfig({
   lang: 'zh-CN',
-  description: '基于文件实时同步的本地知识库',
+  description: '为AI构建的私有实时知识库',
 
   themeConfig: {
     // nav: nav(),
