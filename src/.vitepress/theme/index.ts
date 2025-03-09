@@ -2,7 +2,6 @@
 import DefaultTheme from "vitepress/theme";
 import { h, type Plugin } from "vue";
 import { useData, useRoute } from "vitepress";
-import type { EnhanceAppContext } from "vitepress";
 
 import {
   NolebaseGitChangelogPlugin,
@@ -18,7 +17,7 @@ import { NolebaseEnhancedReadabilitiesPlugin } from "@nolebase/vitepress-plugin-
 import codeblocksFold from "vitepress-plugin-codeblocks-fold";
 import { NolebaseHighlightTargetedHeading } from "@nolebase/vitepress-plugin-highlight-targeted-heading/client";
 import { InjectionKey } from "@nolebase/vitepress-plugin-git-changelog/client";
-import { HomeFooter } from "@theojs/lumen";
+import { HomeFooter, ShareButton } from "@theojs/lumen";
 import { Footer_Data } from "../data/footerData.ts";
 import { NolebaseInlineLinkPreviewPlugin } from "@nolebase/vitepress-plugin-inline-link-preview/client";
 
@@ -40,7 +39,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // 'aside-outline-before': () => h(ShareButton),
+      'aside-outline-before': () => h(ShareButton),
       "home-hero-before": () => h(Hero),
       "layout-bottom": () => h(HomeFooter, { Footer_Data }),
       "nav-bar-content-after": () => h(NolebaseEnhancedReadabilitiesMenu),
