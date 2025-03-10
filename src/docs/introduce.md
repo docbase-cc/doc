@@ -30,7 +30,7 @@ https://dify.ai/
 
 ### 作为知识搜索引擎
 
-[部署后](./start.md)，通过 WebDav 将知识库映射到本地，编辑本地文件云端知识自动更新，而后便捷搜索
+[部署后](./start.md)，通过 WebDav 将知识库映射到本地，编辑本地文件知识库自动更新，而后便捷搜索
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
   <img src="/ui/search.png" alt="description" width="800" height="300"/>
