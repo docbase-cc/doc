@@ -7,7 +7,7 @@ export const zh = defineConfig({
   themeConfig: {
     // nav: nav(),
 
-    // sidebar: sidebarGuide(),
+    sidebar: sidebarGuide(),
 
     editLink: {
       pattern: "https://github.com/docbase-cc/doc/edit/main/src/:path",
@@ -55,80 +55,19 @@ export const zh = defineConfig({
 //   ]
 // }
 
-// function sidebarGuide(): DefaultTheme.Sidebar {
-//   return [
-//     {
-//       text: '快速开始',
-//       base: '/guide',
-//       collapsed: true,
-//       items: [
-//         { text: '目录导航', link: '/start-install' },
-//         { text: '什么是 NapCatQQ', link: '/napcat' },
-//         { text: '启动方式', link: '/install' },
-//         {
-//           text: '安装方式',
-//           base: '/guide/boot',
-//           collapsed: false,
-//           items: [
-//             { text: 'Shell', link: '/Shell' },
-//             { text: 'Framework', link: '/Framework' }
-//           ]
-//         }
-//       ]
-//     },
-//     {
-//       text: '配置',
-//       base: '/config',
-//       collapsed: true,
-//       items: [
-//         { text: '基础配置', link: '/basic' },
-//         { text: '高级配置', link: '/advanced' }
-//       ]
-//     },
-//     {
-//       text: '使用',
-//       base: '/use',
-//       collapsed: true,
-//       items: [
-//         { text: '接入框架', link: '/integration' },
-//         { text: '社区资源', link: '/community' }
-//       ]
-//     },
-//     {
-//       text: '开发',
-//       base: '/develop',
-//       collapsed: true,
-//       items: [
-//         { text: '请求接口', link: '/api' },
-//         { text: '上报事件', link: '/event' },
-//         { text: '消息类型', link: '/msg' },
-//         { text: '本体开发', link: '/plugin' },
-//         { text: '处理文件', link: '/file' },
-//         {
-//           text: '完整接口定义',
-//           base: '/develop/api',
-//           collapsed: false,
-//           items: [
-//             { text: '接口', link: '/doc' },
-//             { text: '类型', link: '/type' }
-//           ]
-//         }
-//       ]
-//     },
-//     {
-//       text: '其余',
-//       base: '/other',
-//       collapsed: true,
-//       items: [
-//         {
-//           text: '喵喵',
-//           link: '/napcat.md'
-//         },
-//         {
-//           text: '关于',
-//           link: '/about'
-//         }
-//       ]
-//     },
-//   ]
-// }
+function sidebarGuide(): DefaultTheme.Sidebar {
+  return [
+    {
+      text: '快速开始',
+      base: '/docs',
+      collapsed: true,
+      items: [
+        { text: '简介', link: '/introduce' },
+        { text: '部署', link: '/start' },
+        { text: 'API 文档', link: '/swagger' },
+        { text: 'WebDAV 协议', link: '/webdav' },
+        { text: '接入 Dify 打造你的第二大脑', link: '/dify' },
+      ]
+    }
+  ]
+}

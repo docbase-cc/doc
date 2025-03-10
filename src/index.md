@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: docs/api-examples.md
+      link: docs/introduce.md
     - theme: alt
       text: GitHub
       link: https://github.com/docbase-cc/docbase

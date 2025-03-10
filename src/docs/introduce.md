@@ -2,7 +2,7 @@
 comment: false
 ---
 
-# DocBase
+# 🗃️ DocBase
 
 DocBase 专注于自动构建专业 AI 知识库，特色是<mark>将本地文件实时嵌入到知识库引擎中</mark>。
 
@@ -28,38 +28,17 @@ https://dify.ai/
 
 ## 使用场景
 
-### Nas 部署 <Badge type="tip" text="recommend" />
+### 作为知识搜索引擎
 
-使用 docker-compose 部署 DocBase 后，通过 WebDav 将知识库映射到本地，编辑本地文件后，知识引擎中的数据便会自动更新，从而便捷搜索
-
-<!-- TODO 插入视频 -->
-
-### 接入 Dify 打造你的第二大脑 <Badge type="tip" text="recommend" />
-
-1. 点击创建 dify 外部知识库
-
-<div style="display: flex; justify-content: center;">
-  <img src="/dify/wbzsk.png" alt="description" width="500" height="300"/>
-</div>
-
-2. 输入 DocBase 地址及密钥：
-
-<div style="display: flex; justify-content: center;">
-  <img src="/dify/image.png" alt="description" width="500" height="300"/>
-</div>
-
-3. 创建外部知识库
+[部署后](./start.md)，通过 WebDav 将知识库映射到本地，编辑本地文件云端知识自动更新，而后便捷搜索
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-  <img src="/dify/createkb.png" alt="description" width="500" height="300"/>
-  <img src="/dify/createkb2.png" alt="description" width="500" height="300"/>
+  <img src="/ui/search.png" alt="description" width="800" height="300"/>
 </div>
 
-目前版本 知识库 ID 随便输入即可
+### 作为 Dify 外部知识库使用 <Badge type="tip" text="recommend" />
 
-Score 建议设置 0.8 以上
-
-4. 愉快的使用吧
+具体流程：[🗃️ Dify](./dify.md)
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
   <img src="/dify/use.png" alt="description" width="800" height="300"/>
