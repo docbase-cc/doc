@@ -19,7 +19,7 @@ hero:
 features:
   - icon: 📂
     title: 全能文档支持
-    details: 一站式继承，Markdown/Office 等格式全覆盖
+    details: 一站式集成，Markdown/Office 等格式全覆盖
   - icon: 🧩
     title: 灵活插件系统
     details: 模块化设计，随心扩展文档类型支持
