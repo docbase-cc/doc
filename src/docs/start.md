@@ -3,7 +3,7 @@
 1. 下载 Docker Compose 文件：
 
 ```bash
-curl -o docker-compose.yaml https://unpkg.com/docbase/docker-compose.yaml
+curl -L -o docker-compose.yaml https://unpkg.com/docbase/docker-compose.yaml
 ```
 
 2. 修改`docker-compose.yaml`中以下环境变量
