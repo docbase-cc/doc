@@ -1,30 +1,39 @@
 # 部署
 
+## cli 启动
+
+1. 确保已安装`Bun`
+
+[如何安装？](https://www.bunjs.cn/docs/installation#%E5%AE%89%E8%A3%85)
+
+2. 启动服务
+
+```bash
+bun x docbase
+```
+
+## 使用 Docker
+
+```
+docker run -d -p 3000:3000 -v ./data:/root/.docbase gonorth/docbase:latest
+```
+
+## 使用 Docker Compose
+
 1. 下载 Docker Compose 文件：
 
 ```bash
-curl -L -o docker-compose.yaml https://unpkg.com/docbase/docker-compose.yaml
+curl -L -o docker-compose.yaml https://unpkg.com/docbase/dist/docker-compose.yaml
 ```
 
-2. 修改`docker-compose.yaml`中以下环境变量
-
-- MEILI_MASTER_KEY 设置 DocBase 应用密钥
-- EMBEDDING_APIKEY 嵌入模型服务（默认为硅基流动）密钥
-
-3. 启动服务
+2. 启动服务
 
 ```bash
 docker-compose up -d
 ```
 
-即可访问 `http://localhost:3000` 
+密钥默认为：mykey
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-  <img src="/ui/token.png" alt="description" width="800" height="300"/>
-</div>
+生产环境请修改`docker-compose.yaml`中以下环境变量
 
-输入你的 `MEILI_MASTER_KEY` 密钥，点击右下角设置按钮，切换到搜索页面进行搜索
-
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-  <img src="/ui/image.png" alt="description" width="800" height="300"/>
-</div>
+- MEILI_MASTER_KEY: DocBase 的应用密钥
