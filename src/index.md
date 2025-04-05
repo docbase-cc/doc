@@ -10,8 +10,11 @@ hero:
   tagline: 轻松构建 · 自动管理 · 极速搜索
   actions:
     - theme: brand
-      text: 开始使用
+      text: 文档
       link: docs/introduce.md
+    - theme: brand
+      text: 下载安装
+      link: https://github.com/docbase-cc/desktop/releases
     - theme: alt
       text: GitHub
       link: https://github.com/docbase-cc/docbase
