@@ -58,16 +58,17 @@ export const zh = defineConfig({
 function sidebarGuide(): DefaultTheme.Sidebar {
   return [
     {
-      text: '快速开始',
-      base: '/docs',
+      text: "快速开始",
+      base: "/docs",
       collapsed: true,
       items: [
-        { text: '简介', link: '/introduce' },
-        { text: '部署', link: '/start' },
-        { text: 'API 文档', link: '/swagger' },
-        { text: 'WebDAV 协议', link: '/webdav' },
-        { text: '接入 Dify 打造你的第二大脑', link: '/dify' },
-      ]
-    }
-  ]
+        { text: "简介", link: "/introduce" },
+        { text: "部署", link: "/start" },
+        { text: "API 文档", link: "/swagger" },
+        { text: "WebDAV 协议", link: "/webdav" },
+        { text: "接入 Dify 打造你的第二大脑", link: "/dify" },
+        { text: "插件开发", link: "/plugins" },
+      ],
+    },
+  ];
 }

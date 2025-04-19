@@ -1,5 +1,12 @@
 # 部署
 
+### 安装包启动
+
+下载最新安装包：https://github.com/docbase-cc/docbase/releases
+
+解压后运行 `docbase` 启动服务。
+
+<!-- 
 ## cli 启动
 
 1. 确保已安装`Bun`
@@ -36,4 +43,4 @@ docker-compose up -d
 
 生产环境请修改`docker-compose.yaml`中以下环境变量
 
-- MEILI_MASTER_KEY: DocBase 的应用密钥
+- MEILI_MASTER_KEY: DocBase 的应用密钥 -->
